@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4F6E9"
+    tools:context=".editpassactivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbarofeditpassword"
+        android:background="#F1EDED">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="12dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textColorHint="#ff393737"
+            android:id="@+id/edittitleofpassword">
+
+        </EditText>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbarofeditpassword"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:id="@+id/editpassword"
+        android:inputType="textWebPassword"
+        android:textColorHint="#ff393737">
+
+
+    </EditText>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editpassword"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Show Password"
+        android:textColor="@color/black"
+        android:buttonTint="@color/purple_200"
+        android:id="@+id/checkBox2"
+        >
+    </CheckBox>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_gravity="bottom|end"
+        android:id="@+id/saveeditpassword"
+        android:src="@drawable/updates"
+
+        app:maxImageSize="70dp">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        android:id="@+id/progressbarofcreatepassword"
+        android:layout_marginTop="10dp">
+
+    </ProgressBar>
+
+
+</RelativeLayout>

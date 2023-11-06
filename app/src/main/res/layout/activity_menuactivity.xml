@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C3AEEA"
+    tools:context=".menuactivity">
+
+
+    <RelativeLayout
+        android:id="@+id/centerline4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+    </RelativeLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="YOUR NOTES"
+        android:textStyle="bold"
+        android:backgroundTint="#FF8A80"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:id="@+id/notesmenu"
+
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+        <!--style="?android:attr/borderlessButtonStyle"-->
+
+
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:backgroundTint="#FFE57F"
+
+        android:id="@+id/blank1"
+        android:layout_below="@id/notesmenu"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+        <!--style="?android:attr/borderlessButtonStyle"-->
+
+
+
+    </Button>
+
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="YOUR PASSWORDS"
+        android:backgroundTint="#B388FF"
+        android:drawableLeft="@drawable/ic_launcher_foreground"
+        android:id="@+id/passwordsmenu"
+        android:layout_below="@id/blank1"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+
+    </Button>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+
+        android:backgroundTint="#FFFF8D"
+
+        android:id="@+id/blank2"
+        android:layout_below="@id/passwordsmenu"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp">
+
+    </Button>
+
+
+
+
+
+</RelativeLayout>
